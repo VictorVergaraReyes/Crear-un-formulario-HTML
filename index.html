@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la persona Usuaria</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main id="contenedor">
+        <header id="encabezado">
+            <p class="adorno" aria-hidden="true">🎃</p>
+            <h1>Registro usuario</h1>
+            <p class="subtitulo">Completa tus datos para unirte</p>
+        </header>
+
+        <form id="formulario-registro" action="#" method="post">
+
+            <fieldset class="seccion" id="seccion-datos">
+                <legend>Datos personales</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="entrada" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" class="entrada" placeholder="Tu apellido" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" class="entrada" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" class="entrada" placeholder="Mínimo 8 caracteres" minlength="8" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="seccion" id="seccion-descripcion">
+                <legend>Sobre ti</legend>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" class="entrada" rows="4" placeholder="Cuéntanos brevemente sobre ti..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="seccion" id="seccion-intereses">
+                <legend>Intereses</legend>
+
+                <div class="opcion">
+                    <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+                    <label for="tecnologia">Tecnología</label>
+                </div>
+
+                <div class="opcion">
+                    <input type="checkbox" id="arte" name="intereses" value="arte">
+                    <label for="arte">Arte</label>
+                </div>
+
+                <div class="opcion">
+                    <input type="checkbox" id="deporte" name="intereses" value="deporte">
+                    <label for="deporte">Deporte</label>
+                </div>
+            </fieldset>
+
+            <button type="submit" id="boton-enviar">Registrarse</button>
+        </form>
+    </main>
+</body>
+</html>
